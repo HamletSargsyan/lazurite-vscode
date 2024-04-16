@@ -7,9 +7,17 @@
     "vscode": "^1.88.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages", "Snippets"
   ],
+  "icon": "./assets/lzr_logo.png",
   "contributes": {
+    "iconThemes": [
+      {
+        "id": "lazurite",
+        "label": "lazurite",
+        "path": "./fileicons/lazurite.json"
+      }
+    ],
     "languages": [{
       "id": "lazurite",
       "aliases": ["Lazurite", "lazurite"],

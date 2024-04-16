@@ -54,7 +54,7 @@
             "patterns": [
                 {
                     "name": "keyword.operator.lazurite",
-                    "match": "[-+*/=]"
+                    "match": "[-+*/=<>]"
                 }
             ]
         },
