@@ -1,0 +1,32 @@
+{
+  "name": "lazurite",
+  "displayName": "Lazurite",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lazurite",
+      "aliases": ["Lazurite", "lazurite"],
+      "extensions": [".lzr"],
+      "configuration": "./language-configuration.json"
+    }  
+  ],
+    "grammars": [{
+      "language": "lazurite",
+      "scopeName": "source.lazurite",
+      "path": "./syntaxes/lazurite.tmLanguage.json"
+    }],
+    "snippets": [
+      {
+        "language": "lazurite",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

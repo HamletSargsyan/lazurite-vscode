@@ -1,0 +1,49 @@
+{
+    "print": {
+        "prefix": "print",
+        "scope": "lazurite",
+        "body": "print($1)$0"
+    },
+    "println": {
+        "prefix": "println",
+        "scope": "lazurite",
+        "body": "println($1)$0"
+    },
+
+
+    "str": {
+        "prefix": "str",
+        "scope": "lazurite",
+        "body": "str($1)$0"
+    },
+    "byte": {
+        "prefix": "byte",
+        "scope": "lazurite",
+        "body": "byte($1)$0"
+    },
+    "double": {
+        "prefix": "double",
+        "scope": "lazurite",
+        "body": "double($1)$0"
+    },
+    "float": {
+        "prefix": "float",
+        "scope": "lazurite",
+        "body": "float($1)$0"
+    },
+    "int": {
+        "prefix": "int",
+        "scope": "lazurite",
+        "body": "int($1)$0"
+    },
+    "long": {
+        "prefix": "long",
+        "scope": "lazurite",
+        "body": "long($1)$0"
+    },
+    "num": {
+        "prefix": "num",
+        "scope": "lazurite",
+        "body": "num($1)$0"
+    }
+}
