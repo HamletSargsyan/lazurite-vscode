@@ -5,6 +5,12 @@
     "scopeName": "source.lazurite",
     "patterns": [
         {
+            "include": "#comments"
+        },
+        {
+            "include": "#functions"
+        },
+        {
             "include": "#keywords"
         },
         {
@@ -20,12 +26,6 @@
             "include": "#variables"
         },
         {
-            "include": "#comments"
-        },
-        {
-            "include": "#functions"
-        },
-        {
             "include": "#loops"
         },
         {
@@ -33,12 +33,6 @@
         },
         {
             "include": "#switch"
-        },
-        {
-            "include": "#case"
-        },
-        {
-            "include": "#call"
         }
     ],
     "repository": {
@@ -46,7 +40,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.lazurite",
-                    "match": "\\b(func|if|else|while|for|switch|case|default|and|or|using)\\b"
+                    "match": "\\b(func|if|else|while|for|switch|return|case|default|and|or|using|new)\\b"
                 }
             ]
         },
@@ -92,30 +86,30 @@
         "comments": {
             "patterns": [
                 {
-                    "name": "comment.line.double-slash.lazurite",
-                    "match": "//.*?\\n"
+                    "name": "comment.line.lazurite",
+                    "match": "//.*$"
                 },
                 {
                     "name": "comment.block.lazurite",
                     "begin": "/\\*",
-                    "end": "\\*/"
+                    "end": "\\*/",
+                    "patterns": [
+                        {
+                            "include": "#comments"
+                        }
+                    ]
                 }
             ]
         },
         "functions": {
             "patterns": [
                 {
-                    "name": "meta.function.lazurite",
-                    "begin": "\\bfunc\\b",
-                    "end": "{",
-                    "patterns": [
-                        {
-                            "include": "#variables"
-                        }
-                    ]
+                    "name": "entity.name.function.lazurite",
+                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\()"
                 }
             ]
-        },
+        },        
+        
         "loops": {
             "patterns": [
                 {

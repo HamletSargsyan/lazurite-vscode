@@ -3,21 +3,14 @@
   "displayName": "Lazurite",
   "description": "",
   "version": "0.0.1",
+  "icon": "./assets/lzr_logo.png",
   "engines": {
     "vscode": "^1.88.0"
   },
   "categories": [
     "Programming Languages", "Snippets"
   ],
-  "icon": "./assets/lzr_logo.png",
   "contributes": {
-    "iconThemes": [
-      {
-        "id": "lazurite",
-        "label": "lazurite",
-        "path": "./fileicons/lazurite.json"
-      }
-    ],
     "languages": [{
       "id": "lazurite",
       "aliases": ["Lazurite", "lazurite"],
