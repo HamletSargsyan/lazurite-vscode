@@ -1,6 +1,6 @@
 {
   "name": "lazurite",
-  "displayName": "Lazurite",
+  "displayName": "Lazurite-vscode",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -8,6 +8,9 @@
   },
   "categories": [
     "Programming Languages", "Snippets"
+  ],
+  "keywords": [
+    "Lazurite", "programming language", "snippents", "syntax highlighting"
   ],
   "contributes": {
     "languages": [{
