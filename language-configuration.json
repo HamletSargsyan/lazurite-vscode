@@ -69,10 +69,5 @@
             "'"
         ]
     ],
-    "language": "lazurite",
-    "icons": {
-        "file": "assets/icon.png",
-        "light": "assets/icon.png",
-        "dark": "assets/icon.png"
-    }
+    "language": "lazurite"
 }
