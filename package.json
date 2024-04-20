@@ -3,7 +3,6 @@
   "displayName": "Lazurite",
   "description": "",
   "version": "0.0.1",
-  "icon": "./assets/lzr_logo.png",
   "engines": {
     "vscode": "^1.88.0"
   },
