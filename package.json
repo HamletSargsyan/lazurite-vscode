@@ -6,6 +6,10 @@
   "engines": {
     "vscode": "^1.88.0"
   },
+  "publisher": "HamletSargsyan",
+  "repository": {
+    "url": "https://github.com/HamletSargsyan/Lazurite-vscode"
+  },
   "categories": [
     "Programming Languages", "Snippets"
   ],
