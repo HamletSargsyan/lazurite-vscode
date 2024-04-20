@@ -16,8 +16,8 @@
       "aliases": ["Lazurite", "lazurite"],
       "extensions": [".lzr"],
       "icon": {
-        "light": "./assets/icon.png",
-        "dark": "./assets/icon.png"
+        "light": "./assets/icon.svg",
+        "dark": "./assets/icon.svg"
       }
     }  
   ],
