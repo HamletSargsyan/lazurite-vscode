@@ -1,6 +1,10 @@
 # Lazurite-vscode
 
 
+<center>
+<img src="/assets/icon.png">
+</center>
+
 Syntax highlighting and snippets for the [lazurite](https://github.com/ArtyomKingmang/Lazurite) language
 
 
