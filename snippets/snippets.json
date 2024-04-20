@@ -45,5 +45,105 @@
         "prefix": "num",
         "scope": "lazurite",
         "body": "num($1)$0"
+    },
+    "array": {
+        "prefix": "Array",
+        "scope": "lazurite",
+        "body": "Array($1)$0"
+    },
+
+    "using": {
+        "prefix": "using",
+        "scope": "lazurite",
+        "body": "using \"$1\"$0"
+    },
+    "func": {
+        "prefix": "func",
+        "scope": "lazurite",
+        "body": [
+            "func ${1:funcName}($2){",
+            "\t${3:// Code here...}",
+            "}$0"
+        ]
+    },
+    "if": {
+        "prefix": "if",
+        "scope": "lazurite",
+        "body": [
+            "if ($1){",
+            "\t${3:// Code here...}",
+            "}$0"
+        ]
+    },
+    "match": {
+        "prefix": "match",
+        "scope": "lazurite",
+        "body": [
+            "match ($1){",
+            "\tcase $2: {",
+            "\t\t${3:// Code here...}",
+            "\t}",
+            "}$0"
+        ]
+    },
+    "case": {
+        "prefix": "case",
+        "scope": "lazurite",
+        "body": [
+            "case $1: {",
+            "\t${2:// Code here...}",
+            "}"
+        ]
+    },
+    "while": {
+        "prefix": "while",
+        "scope": "lazurite",
+        "body": [
+            "while ($1){",
+            "\t${2:// Code here...}",
+            "}"
+        ]
+    },
+    "for": {
+        "prefix": "for",
+        "scope": "lazurite",
+        "body": [
+            "for (${1:i}, $1 < $2, $1++){",
+            "\t${3:// Code here...}",
+            "}"
+        ]
+    },
+    "for :": {
+        "prefix": "for",
+        "scope": "lazurite",
+        "body": [
+            "for (${1:i} : ${2:arr}){",
+            "\t${3:// Code here...}",
+            "}"
+        ]
+    },
+    "class": {
+        "prefix": "class",
+        "scope": "lazurite",
+        "body": [
+            "class ${1:className} {",
+            "\tfunc $1($2){",
+            "\t\t$3",
+            "\t}",
+            "}"
+        ]
+    },
+    
+    "#define": {
+        "prefix": "#define",
+        "scope": "lazurite",
+        "body": "#define $1$0"
+    },
+
+    
+    "new": {
+        "prefix": "new",
+        "scope": "lazurite",
+        "body": "new $1$0"
     }
 }
