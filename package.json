@@ -23,6 +23,7 @@
       "id": "lazurite",
       "aliases": ["Lazurite", "lazurite"],
       "extensions": [".lzr"],
+      "configuration": "./language-configuration.json",
       "icon": {
         "light": "./assets/icon.svg",
         "dark": "./assets/icon.svg"
