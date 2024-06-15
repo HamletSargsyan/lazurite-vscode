@@ -2,7 +2,7 @@
   "name": "lazurite",
   "displayName": "Lazurite-vscode",
   "description": "",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.88.0"
   },
@@ -13,28 +13,40 @@
   },
   "license": "MIT",
   "categories": [
-    "Programming Languages", "Snippets"
+    "Programming Languages",
+    "Snippets"
   ],
   "keywords": [
-    "Lazurite", "programming language", "snippents", "syntax highlighting"
+    "Lazurite",
+    "programming language",
+    "snippents",
+    "syntax highlighting"
   ],
   "contributes": {
-    "languages": [{
-      "id": "lazurite",
-      "aliases": ["Lazurite", "lazurite"],
-      "extensions": [".lzr"],
-      "configuration": "./language-configuration.json",
-      "icon": {
-        "light": "./assets/icon.svg",
-        "dark": "./assets/icon.svg"
+    "languages": [
+      {
+        "id": "lazurite",
+        "aliases": [
+          "Lazurite",
+          "lazurite"
+        ],
+        "extensions": [
+          ".lzr"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./assets/icon.svg",
+          "dark": "./assets/icon.svg"
+        }
       }
-    }  
-  ],
-    "grammars": [{
-      "language": "lazurite",
-      "scopeName": "source.lazurite",
-      "path": "./syntaxes/lazurite.tmLanguage.json"
-    }],
+    ],
+    "grammars": [
+      {
+        "language": "lazurite",
+        "scopeName": "source.lazurite",
+        "path": "./syntaxes/lazurite.tmLanguage.json"
+      }
+    ],
     "snippets": [
       {
         "language": "lazurite",
