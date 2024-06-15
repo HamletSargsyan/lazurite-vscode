@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [Unreleased]
+### Added
+- new snippets
+- new keywords for syntax highlighting
 
 ## [0.0.4] - 2024-06-15
 ### Added

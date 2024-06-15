@@ -152,5 +152,22 @@
         "prefix": "new",
         "scope": "lazurite",
         "body": "new $1$0"
+    },
+
+    "try": {
+        "prefix": "try",
+        "scope": "lazurite",
+        "body": [
+            "try {",
+            "\t${1:// Code here...}",
+            "} catch if exception.type == \"${2:Exception}\" {",
+            "\t${3:// Code here...}",
+            "}"
+        ]
+    },
+    "throw": {
+        "prefix": "throw",
+        "scope": "lazurite",
+        "body": "throw ${1:Exception} \"${2:message}\"$0"
     }
 }
