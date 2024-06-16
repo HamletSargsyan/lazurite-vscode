@@ -40,7 +40,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.lazurite",
-                    "match": "\\b(func|if|else|while|for|switch|return|case|default|and|or|using|new|class|define|include|try|catch|throw)\\b"
+                    "match": "\\b(func|if|else|while|for|switch|return|case|default|and|or|using|new|class|define|include|try|catch|throw|macro)\\b"
                 }
             ]
         },
@@ -57,6 +57,10 @@
                 {
                     "name": "constant.numeric.lazurite",
                     "match": "\\b[0-9]+\\b"
+                },
+                {
+                    "name": "constant.language",
+                    "match": "\\b(?:true|false)\\b"
                 }
             ]
         },
