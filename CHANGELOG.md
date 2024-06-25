@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## [Unreleased]
+## [0.1.0]
 ### Added
 - new snippets
 - new keywords for syntax highlighting
