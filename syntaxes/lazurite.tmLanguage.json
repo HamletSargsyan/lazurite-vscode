@@ -1,7 +1,6 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "lazurite",
-
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "lazurite",
     "scopeName": "source.lazurite",
     "patterns": [
         {
@@ -40,7 +39,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.lazurite",
-                    "match": "\\b(func|if|else|while|for|switch|return|case|default|and|or|using|new|class|define|include|try|catch|throw|macro)\\b"
+                    "match": "\\b(func|if|else|while|for|match|return|case|default|and|or|using|new|class|define|include|try|catch|throw|macro|enum|break|continue)\\b"
                 }
             ]
         },
@@ -56,7 +55,7 @@
             "patterns": [
                 {
                     "name": "constant.numeric.lazurite",
-                    "match": "\\b[0-9]+\\b"
+                    "match": "\\b[0-9]+[bldfiz]?\\b"
                 },
                 {
                     "name": "constant.language",
@@ -105,15 +104,6 @@
                 }
             ]
         },
-        "functions": {
-            "patterns": [
-                {
-                    "name": "entity.name.function.lazurite",
-                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b\\s*(?=\\()"
-                }
-            ]
-        },        
-        
         "loops": {
             "patterns": [
                 {
@@ -146,7 +136,7 @@
             "patterns": [
                 {
                     "name": "meta.switch.lazurite",
-                    "begin": "\\bswitch\\b",
+                    "begin": "\\bmatch\\b",
                     "end": "{",
                     "patterns": [
                         {
@@ -170,5 +160,13 @@
                 }
             ]
         }
+    },
+    "functions": {
+        "patterns": [
+            {
+                "name": "entity.name.function.lazurite",
+                "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b\\s*(?=\\()"
+            }
+        ]
     }
 }
