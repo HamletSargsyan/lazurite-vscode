@@ -6,6 +6,12 @@ func greet(name){
 
 greet("world")
 
+// comment
+
+/*
+block comment
+*/
+
 class Calc {
     func Calc(a, op, b){
         this.a = a
