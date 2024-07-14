@@ -60,5 +60,3 @@ for (i : arr){
     print(str(i) + " ")
 }
 println("")
-
-
