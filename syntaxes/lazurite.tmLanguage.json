@@ -5,6 +5,7 @@
     "patterns": [
         { "include": "#comments" },
         { "include": "#keywords" },
+        { "include": "#classes" },
         { "include": "#functions" },
         { "include": "#operators" },
         { "include": "#constants" },
@@ -47,9 +48,9 @@
         "strings": {
             "patterns": [
                 {
-                    "name": "constant.string.lazurite",
-                    "begin": "[\"|\\']",
-                    "end": "[\"|\\']",
+                    "name": "string.quoted",
+                    "begin": "(\"|\\')",
+                    "end": "(\"|\\')",
                     "patterns": [
                         {
                             "name": "constant.character.escape.lazurite",
@@ -60,9 +61,10 @@
                             "begin": "\\$\\{",
                             "end": "\\}",
                             "patterns": [
-                                { "include": "#variables" },
+                                { "include": "#functions" },
                                 { "include": "#constants" },
-                                { "include": "#operators" }
+                                { "include": "#operators" },
+                                { "include": "#variables" }
                             ]
                         },
                         {
@@ -113,7 +115,7 @@
                     "end": "{",
                     "patterns": [ { "include": "#variables" } ]
                 }
-                ]
+            ]
         },
         "switch": {
             "patterns": [
@@ -156,6 +158,14 @@
                 {
                     "name": "entity.name.function.lazurite",
                     "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b\\s*(?=\\()"
+                }
+            ]
+        },
+        "classes": {
+            "patterns": [
+                {
+                    "name": "entity.name.type.lazurite",
+                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b\\s*(?=\\{)"
                 }
             ]
         }

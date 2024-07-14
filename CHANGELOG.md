@@ -9,12 +9,13 @@
 - strings interpolation (`"${1 + 1}"`, `"{$var}"`)
 - preprocessors: `#include`, `#define`, `#jInclude`
 - new snippet for `assert`
+- class highlighting
 
 ### Changed
 - snippets
 
 ### Fixed
-- functions highlighting
+- functions and strings highlighting
 
 ## [0.2.0] - 2024-06-27
 ### Added
