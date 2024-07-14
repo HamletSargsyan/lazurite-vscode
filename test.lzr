@@ -1,4 +1,3 @@
-
 using "random"
 
 func greet(name){
