@@ -4,6 +4,7 @@
 ### Added
 - new keyword: `assert`
 - new operators: `%`, `~`, `:`, `^`, `.`, `,`, `{`, `}`, `[`, `]`, `(`, `)`
+- new constant: `this`
 - support for new number style (`1_000_000`, `100_000`, ...)
 - strings interpolation (`"${1 + 1}"`, `"{$var}"`)
 - preprocessors: `#include`, `#define`, `#jInclude`
