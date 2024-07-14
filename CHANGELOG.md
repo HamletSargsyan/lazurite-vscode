@@ -2,14 +2,14 @@
 
 ## [Unreleased]
 ### Added
-- new keyword: `assert`
 - new operators: `%`, `~`, `:`, `^`, `.`, `,`, `{`, `}`, `[`, `]`, `(`, `)`
 - support for new number style (`1_000_000`, `100_000`, ...)
-- interpolation (`"${1 + 1}"`, `"{$var}"`)
+- strings interpolation (`"${1 + 1}"`, `"{$var}"`)
 - preprocessors: `#include`, `#define`, `#jInclude`
+- new snippet for `assert`
 
 ### Changed
-- Snippets
+- snippets
 
 ## [0.2.0] - 2024-06-27
 ### Added

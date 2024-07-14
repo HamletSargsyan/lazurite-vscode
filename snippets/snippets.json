@@ -168,5 +168,11 @@
         "prefix": "throw",
         "scope": "lazurite",
         "body": "throw ${1:Exception} \"${2:message}\"$0"
+    },
+
+    "assert": {
+        "prefix": "assert",
+        "scope": "lazurite",
+        "body": "assert($1)$0"
     }
 }
