@@ -12,6 +12,9 @@
 ### Changed
 - snippets
 
+### Fixed
+- functions highlighting
+
 ## [0.2.0] - 2024-06-27
 ### Added
 - new keywords for syntax highlighting
