@@ -108,12 +108,12 @@
         "conditions": {
             "patterns": [
                 {
-                    "name": "meta.condition.lazurite",
-                    "begin": "\\bif\\b",
+                    "name": "meta.condition.if.lazurite",
+                    "begin": "\\b(if|else if|elseif)\\b",
                     "end": "{",
                     "patterns": [ { "include": "#variables" } ]
                 }
-            ]
+                ]
         },
         "switch": {
             "patterns": [
