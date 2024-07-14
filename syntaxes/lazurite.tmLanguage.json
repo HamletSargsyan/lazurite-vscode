@@ -111,7 +111,7 @@
             "patterns": [
                 {
                     "name": "meta.condition.if.lazurite",
-                    "begin": "\\b(if|else if|elseif)\\b",
+                    "begin": "\\b(if|else if|else)\\b",
                     "end": "{",
                     "patterns": [ { "include": "#variables" } ]
                 }
