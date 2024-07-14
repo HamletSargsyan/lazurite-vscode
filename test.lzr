@@ -1,0 +1,64 @@
+using "random"
+
+func greet(name){
+    println("Hello " + name)
+}
+
+greet("world")
+
+class Calc {
+    func Calc(a, op, b){
+        this.a = a
+        this.b = b
+        this.op = op
+    }
+
+    func calc() {
+        return this._calc(this.a, this.op, this.b)
+    }
+
+    func _calc(a, op, b){
+        return match (op){
+            case "+": a + b
+            case "-": a - b
+            case "*": a * b
+            case "/": a / b
+            case _: {
+                throw ValueError "Unsupported op: `" + op + "`"
+            }
+
+        }
+    }
+}
+
+
+a = random(1, 100)
+b = random(1, 100)
+
+op_chance = random(0, 40)
+
+if (op_chance <= 10){
+    op = "+"
+} else if (op_chance <= 20){
+    op = "-"
+} else if (op_chance <= 30){
+    op = "*"
+} else if (op_chance <= 40){
+    op = "/"
+}
+
+calc = new Calc(10, op, 50)
+println(calc.calc())
+
+arr = Array(10)
+
+for (i : range(arr.length)){
+    arr[i] = random(1, 50)
+}
+
+for (i : arr){
+    print(str(i) + " ")
+}
+println("")
+
+

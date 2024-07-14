@@ -173,6 +173,6 @@
     "assert": {
         "prefix": "assert",
         "scope": "lazurite",
-        "body": "assert($1)$0"
+        "body": "assert $1 $0"
     }
 }

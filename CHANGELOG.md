@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Added
+- new keyword: `assert`
 - new operators: `%`, `~`, `:`, `^`, `.`, `,`, `{`, `}`, `[`, `]`, `(`, `)`
 - support for new number style (`1_000_000`, `100_000`, ...)
 - strings interpolation (`"${1 + 1}"`, `"{$var}"`)
