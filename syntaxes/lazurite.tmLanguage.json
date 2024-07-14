@@ -32,6 +32,9 @@
         },
         {
             "include": "#switch"
+        },
+        {
+            "include": "#preprocessor"
         }
     ],
     "repository": {
@@ -39,7 +42,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.lazurite",
-                    "match": "\\b(func|if|else|while|for|match|return|case|default|and|or|using|new|class|define|include|try|catch|throw|macro|enum|break|continue)\\b"
+                    "match": "\\b(func|if|else|while|for|match|return|case|default|and|or|using|new|class|try|catch|throw|macro|enum|break|continue|assert)\\b"
                 }
             ]
         },
@@ -47,7 +50,7 @@
             "patterns": [
                 {
                     "name": "keyword.operator.lazurite",
-                    "match": "[-+*/=<>`&\\|!]"
+                    "match": "[-+*/=<>`&\\|!%~:\\^\\.,\\{\\}\\[\\]\\(\\)]"
                 }
             ]
         },
@@ -55,7 +58,7 @@
             "patterns": [
                 {
                     "name": "constant.numeric.lazurite",
-                    "match": "\\b[0-9]+[bldfiz]?\\b"
+                    "match": "\\b[0-9](_?[0-9])*[bldfiz]?\\b"
                 },
                 {
                     "name": "constant.language",
@@ -67,12 +70,32 @@
             "patterns": [
                 {
                     "name": "constant.string.lazurite",
-                    "begin": "\"",
-                    "end": "\"",
+                    "begin": "[\"|\\']",
+                    "end": "[\"|\\']",
                     "patterns": [
                         {
                             "name": "constant.character.escape.lazurite",
                             "match": "\\\\."
+                        },
+                        {
+                            "name": "constant.character.interpolation.lazurite",
+                            "begin": "\\$\\{",
+                            "end": "\\}",
+                            "patterns": [
+                                {
+                                    "include": "#variables"
+                                },
+                                {
+                                    "include": "#constants"
+                                },
+                                {
+                                    "include": "#operators"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "constant.character.interpolation.simple.lazurite",
+                            "match": "\\$[a-zA-Z_][a-zA-Z0-9_]*"
                         }
                     ]
                 }
@@ -157,6 +180,22 @@
                             "include": "#variables"
                         }
                     ]
+                }
+            ]
+        },
+        "preprocessor": {
+            "patterns": [
+                {
+                    "name": "keyword.preprocessor.include.lazurite",
+                    "match": "^\\s*#include\\b"
+                },
+                {
+                    "name": "keyword.preprocessor.define.lazurite",
+                    "match": "^\\s*#define\\b"
+                },
+                {
+                    "name": "keyword.preprocessor.jinclude.lazurite",
+                    "match": "^\\s*#jInclude\\b"
                 }
             ]
         }

@@ -1,14 +1,25 @@
 # CHANGELOG
 
-## [0.2.0]
+## [Unreleased]
+### Added
+- new keyword: `assert`
+- new operators: `%`, `~`, `:`, `^`, `.`, `,`, `{`, `}`, `[`, `]`, `(`, `)`
+- support for new number style (`1_000_000`, `100_000`, ...)
+- interpolation (`"${1 + 1}"`, `"{$var}"`)
+- preprocessors: `#include`, `#define`, `#jInclude`
+
+### Changed
+- Snippets
+
+## [0.2.0] - 2024-06-27
 ### Added
 - new keywords for syntax highlighting
-- Support for new number style (`12d`, `10b`, ...)
+- support for new number style (`12d`, `10b`, ...)
 
 ### Fixed
 - `match` keyword highlighting
 
-## [0.1.0]
+## [0.1.0] - 2024-06-25
 ### Added
 - new keywords for syntax highlighting
 

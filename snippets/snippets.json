@@ -55,14 +55,8 @@
     "using": {
         "prefix": "using",
         "scope": "lazurite",
-        "body": "using \"$1\"$0"
+        "body": "using \"$1\"\n$0"
     },
-    "include": {
-        "prefix": "include",
-        "scope": "lazurite",
-        "body": "include \"$1\"$0"
-    },
-
 
     "func": {
         "prefix": "func",
@@ -144,7 +138,12 @@
     "#define": {
         "prefix": "#define",
         "scope": "lazurite",
-        "body": "#define $1$0"
+        "body": "#define $1 $2\n$0"
+    },
+    "#include": {
+        "prefix": "#include",
+        "scope": "lazurite",
+        "body": "#include \"$1\"\n$0"
     },
 
     
