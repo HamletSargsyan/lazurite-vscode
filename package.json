@@ -23,6 +23,9 @@
         "snippets",
         "syntax highlighting"
     ],
+    "capabilities" : {
+        "hoverProvider" : "true"
+    },
     "contributes": {
         "menus": {
             "editor/title": [
