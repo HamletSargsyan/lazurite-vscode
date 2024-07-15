@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## [1.0.0-rc.1]
+## [Unreleased]
 ### Added
 - new keyword: `assert`
 - new operators: `%`, `~`, `:`, `^`, `.`, `,`, `{`, `}`, `[`, `]`, `(`, `)`
