@@ -10,6 +10,7 @@
 - preprocessors: `#include`, `#define`, `#jInclude`
 - new snippet for `assert`
 - class highlighting
+- button for executing an active file
 
 ### Changed
 - snippets

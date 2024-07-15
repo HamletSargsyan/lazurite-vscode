@@ -1,58 +1,110 @@
 {
-  "name": "lazurite",
-  "displayName": "Lazurite-vscode",
-  "description": "",
-  "version": "0.2.0",
-  "engines": {
-    "vscode": "^1.88.0"
-  },
-  "publisher": "HamletSargsyan",
-  "icon": "./assets/icon.png",
-  "repository": {
-    "url": "https://github.com/HamletSargsyan/lazurite-vscode"
-  },
-  "license": "MIT",
-  "categories": [
-    "Programming Languages",
-    "Snippets"
-  ],
-  "keywords": [
-    "Lazurite",
-    "programming language",
-    "snippents",
-    "syntax highlighting"
-  ],
-  "contributes": {
-    "languages": [
-      {
-        "id": "lazurite",
-        "aliases": [
-          "Lazurite",
-          "lazurite"
-        ],
-        "extensions": [
-          ".lzr"
-        ],
-        "configuration": "./language-configuration.json",
-        "icon": {
-          "light": "./assets/icon.svg",
-          "dark": "./assets/icon.svg"
-        }
-      }
+    "name": "lazurite",
+    "displayName": "Lazurite-vscode",
+    "description": "",
+    "version": "0.2.0",
+    "engines": {
+        "vscode": "^1.91.0"
+    },
+    "publisher": "HamletSargsyan",
+    "icon": "./assets/icon.png",
+    "repository": {
+        "url": "https://github.com/HamletSargsyan/lazurite-vscode"
+    },
+    "license": "MIT",
+    "categories": [
+        "Programming Languages",
+        "Snippets"
     ],
-    "grammars": [
-      {
-        "language": "lazurite",
-        "scopeName": "source.lazurite",
-        "path": "./syntaxes/lazurite.tmLanguage.json"
-      }
+    "keywords": [
+        "Lazurite",
+        "lazurite",
+        "programming language",
+        "snippets",
+        "syntax highlighting"
     ],
-    "snippets": [
-      {
-        "language": "lazurite",
-        "path": "./snippets/snippets.json"
-      }
-    ]
-  }
+    "contributes": {
+        "menus": {
+            "editor/title": [
+                {
+                    "command": "lazurite.runFile",
+                    "when": "resourceExtname == .lzr",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "title": "run file",
+                "command": "lazurite.runFile",
+                "icon": "$(run)"
+
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "lazurite",
+            "properties": {
+                "lazurite.jarPath": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Lazurite jar path"
+                }
+            }
+        },
+        "languages": [
+            {
+                "id": "lazurite",
+                "aliases": [
+                    "Lazurite",
+                    "lazurite"
+                ],
+                "extensions": [
+                    ".lzr"
+                ],
+                "configuration": "./language-configuration.json",
+                "icon": {
+                    "light": "./assets/icon.svg",
+                    "dark": "./assets/icon.svg"
+                }
+            }
+        ],
+        "grammars": [
+            {
+                "language": "lazurite",
+                "scopeName": "source.lazurite",
+                "path": "./syntaxes/lazurite.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "lazurite",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.7.0",
+        "@types/mocha": "^10.0.7",
+        "@types/node": "20.x",
+        "@types/vscode": "^1.91.0",
+        "@typescript-eslint/eslint-plugin": "^7.14.1",
+        "@typescript-eslint/parser": "^7.11.0",
+        "@vscode/test-cli": "^0.0.9",
+        "@vscode/test-electron": "^2.4.0",
+        "eslint": "^9.7.0",
+        "globals": "^15.8.0",
+        "typescript": "^5.4.5",
+        "typescript-eslint": "^7.16.0"
+    }
 }
- 
