@@ -2,7 +2,7 @@
 
 ![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/HamletSargsyan.lazurite)
 ![GitHub Repo stars](https://img.shields.io/github/stars/HamletSargsyan/lazurite-vscode)
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/HamletSargsyan.lazurite)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/HamletSargsyan.lazurite?include_prereleases)
 ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/HamletSargsyan.lazurite)
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/HamletSargsyan.lazurite)
 
