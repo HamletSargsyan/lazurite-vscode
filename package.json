@@ -2,7 +2,7 @@
     "name": "lazurite",
     "displayName": "Lazurite-vscode",
     "description": "",
-    "version": "0.2.0",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.91.0"
     },
