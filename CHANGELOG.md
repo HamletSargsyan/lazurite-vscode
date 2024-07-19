@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [1.0.0]
+## [Unrelated]
+### Changed
+- snippets
+
+## [1.0.0] - 2024-07-15
 ### Added
 - new keyword: `assert`
 - new operators: `%`, `~`, `:`, `^`, `.`, `,`, `{`, `}`, `[`, `]`, `(`, `)`
