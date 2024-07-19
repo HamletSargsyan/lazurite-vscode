@@ -1,10 +1,25 @@
 using "random"
+// #jInclude "java.util.Stack"
+
+
+// stack = new Stack()
+// stack.push(8)
+// stack.push(9)
+// println(stack.pop())
 
 func greet(name){
+    // println("Hello $name")
     println("Hello " + name)
 }
 
-greet("world")
+func input(prompt = ""){
+    print(prompt)
+    return readln()
+}
+
+name = input("name: ")
+
+greet(name)
 
 // comment
 
