@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [1.1.0] - 2024-08-25
+### Added
+- constants highlighting
+
 ## [1.0.1] - 2024-07-20
 ### Changed
 - snippets
