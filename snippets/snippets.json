@@ -2,54 +2,54 @@
     "print": {
         "prefix": "print",
         "scope": "lazurite",
-        "body": "print($1)$0"
+        "body": "print($0)"
     },
     "println": {
         "prefix": "println",
         "scope": "lazurite",
-        "body": "println($1)$0"
+        "body": "println($0)"
     },
 
 
     "str": {
         "prefix": "str",
         "scope": "lazurite",
-        "body": "str($1)$0"
+        "body": "str($0)"
     },
     "byte": {
         "prefix": "byte",
         "scope": "lazurite",
-        "body": "byte($1)$0"
+        "body": "byte($0)"
     },
     "double": {
         "prefix": "double",
         "scope": "lazurite",
-        "body": "double($1)$0"
+        "body": "double($0)"
     },
     "float": {
         "prefix": "float",
         "scope": "lazurite",
-        "body": "float($1)$0"
+        "body": "float($0)"
     },
     "int": {
         "prefix": "int",
         "scope": "lazurite",
-        "body": "int($1)$0"
+        "body": "int($0)"
     },
     "long": {
         "prefix": "long",
         "scope": "lazurite",
-        "body": "long($1)$0"
+        "body": "long($0)"
     },
     "num": {
         "prefix": "num",
         "scope": "lazurite",
-        "body": "num($1)$0"
+        "body": "num($0)"
     },
     "array": {
         "prefix": "Array",
         "scope": "lazurite",
-        "body": "Array($1)$0"
+        "body": "Array($0)"
     },
 
     "using": {
@@ -63,8 +63,8 @@
         "scope": "lazurite",
         "body": [
             "func ${1:funcName}($2){",
-            "\t${3:// Code here...}",
-            "}$0"
+            "\t${0:// Code here...}",
+            "}"
         ]
     },
     "if": {
@@ -72,8 +72,8 @@
         "scope": "lazurite",
         "body": [
             "if ($1){",
-            "\t${3:// Code here...}",
-            "}$0"
+            "\t${0:// Code here...}",
+            "}"
         ]
     },
     "match": {
@@ -82,9 +82,9 @@
         "body": [
             "match ($1){",
             "\tcase $2: {",
-            "\t\t${3:// Code here...}",
+            "\t\t${0:// Code here...}",
             "\t}",
-            "}$0"
+            "}"
         ]
     },
     "case": {
@@ -92,7 +92,7 @@
         "scope": "lazurite",
         "body": [
             "case $1: {",
-            "\t${2:// Code here...}",
+            "\t${0:// Code here...}",
             "}"
         ]
     },
@@ -101,8 +101,17 @@
         "scope": "lazurite",
         "body": [
             "while ($1){",
-            "\t${2:// Code here...}",
+            "\t${0:// Code here...}",
             "}"
+        ]
+    },
+    "do while": {
+        "prefix": "do",
+        "scope": "lazurite",
+        "body": [
+            "do {",
+            "\t${0:// Code here...}",
+            "} while ($1)"
         ]
     },
     "for": {
@@ -110,7 +119,7 @@
         "scope": "lazurite",
         "body": [
             "for (${1:i}, $1 < $2, $1++){",
-            "\t${3:// Code here...}",
+            "\t${0:// Code here...}",
             "}"
         ]
     },
@@ -119,7 +128,7 @@
         "scope": "lazurite",
         "body": [
             "for (${1:i} : ${2:arr}){",
-            "\t${3:// Code here...}",
+            "\t${0:// Code here...}",
             "}"
         ]
     },
@@ -129,7 +138,7 @@
         "body": [
             "class ${1:className} {",
             "\tfunc $1($2){",
-            "\t\t$3",
+            "\t\t$0",
             "\t}",
             "}"
         ]
@@ -155,7 +164,7 @@
     "new": {
         "prefix": "new",
         "scope": "lazurite",
-        "body": "new $1$0"
+        "body": "new $0"
     },
 
     "try": {

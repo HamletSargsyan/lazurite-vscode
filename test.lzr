@@ -1,11 +1,11 @@
 using "random"
-// #jInclude "java.util.Stack"
+#jInclude "java.util.Stack"
 
 
-// stack = new Stack()
-// stack.push(8)
-// stack.push(9)
-// println(stack.pop())
+stack = new Stack()
+stack.push(8)
+stack.push(9)
+println(stack.pop())
 
 func greet(name){
     // println("Hello $name")

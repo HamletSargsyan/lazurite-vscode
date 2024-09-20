@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## [Unreleased]
+
+### Added
+- new keyword: `do`
+
+
+### Changed
+- dependencies versions in `package.json`
+- snippets
+
+
 ## [1.1.0] - 2024-08-25
 ### Added
 - constants highlighting
